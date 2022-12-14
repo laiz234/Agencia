@@ -10,7 +10,6 @@ namespace Agencia
         private string cpf;
         private Conta[] contas = new Conta[1000];
         private int k = 0;
-        private double saldo;
         public void Inserir(Conta c)
         {
             contas[k] = c;
@@ -24,10 +23,10 @@ namespace Agencia
         }
         public double SaldoTotal()
         {
+            double saldocontas;
             foreach (Conta x in contas)
-                SaldoTotal += saldo;
-            return SaldoTotal;
+                saldocontas += x.saldo;
+            return saldocontas;
         }
     }
-
 }
