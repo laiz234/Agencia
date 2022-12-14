@@ -23,9 +23,9 @@ namespace Agencia
         }
         public double SaldoTotal()
         {
-            double saldocontas;
+            double saldocontas = 0;
             foreach (Conta x in contas)
-                saldocontas += x.saldo;
+                saldocontas += x.GetSaldo;
             return saldocontas;
         }
     }
