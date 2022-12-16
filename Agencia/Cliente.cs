@@ -26,11 +26,11 @@ namespace Agencia
         }
         private Conta[] contas = new Conta[1000];
         private int k = 0;
-        ///public void Inserir(Conta c)
-        ///{
-            ///contas[k] = c;
-            ///k++;
-        ///}
+        public void Inserir(Conta c)
+        {
+            contas[k] = c;
+            k++;
+        }
         public Conta[] Listar()
         {
             Conta[] vetor = new Conta[k];
@@ -45,5 +45,13 @@ namespace Agencia
                 saldocontas += Saldo;
             return saldocontas;
         }
+        //public override string ToString()
+        //{
+        //    {
+        //        if (SaldoTotal == 0)
+        //            return $"{SaldoTotal} Sem saldo";
+        //    }
+        //    return$"{SaldoTotal}"
+        //}
     }
 }

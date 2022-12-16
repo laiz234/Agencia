@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -39,6 +40,11 @@ namespace Agencia
             if (saldo == 0)
                 return $"{numero} - {agencia} - {saldo} sem saldo! ";
             return $"{numero} - {agencia} - {saldo} ";
+        }
+
+        internal IEnumerable Listar()
+        {
+            throw new NotImplementedException();
         }
     }
 }

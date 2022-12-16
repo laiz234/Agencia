@@ -25,6 +25,7 @@ namespace Agencia
             InitializeComponent();
         }
         private Cliente[] cs = new Cliente[100];
+        private Conta[] ct = new Conta[100];
         private int k;
 
         private void NovoCliente_Click(object sender, RoutedEventArgs e)
@@ -46,17 +47,23 @@ namespace Agencia
 
         private void Listar_Click(object sender, RoutedEventArgs e)
         {
-            Cliente x = new Cliente();
+            //Cliente x = new Cliente();
+            Conta x = new Conta();
             exibirlista.ItemsSource = null;
             exibirlista.ItemsSource = x.Listar();
-
         }
 
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+         //   Cliente s = new Cliente();
+         //   exibirtotal.ItemsSource = null;
+         //   exibirtotal.ItemsSource = s.SaldoTotal();
+       // }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Cliente s = new Cliente();
+            Conta s = new Conta();
             exibirtotal.ItemsSource = null;
-            exibirtotal.ItemsSource = s.SaldoTotal;
+            exibirtotal.ItemsSource = s.GetSaldo();
         }
     }
 }
