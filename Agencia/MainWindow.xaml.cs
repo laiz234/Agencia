@@ -64,6 +64,7 @@ namespace Agencia
             Conta s = new Conta();
             exibirtotal.ItemsSource = null;
             exibirtotal.ItemsSource = s.GetSaldo();
+
         }
     }
 }
