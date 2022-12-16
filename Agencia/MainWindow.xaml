@@ -16,16 +16,17 @@
         <Button x:Name="NovoCliente" Content="Novo cliente" HorizontalAlignment="Left" Margin="25,126,0,0" VerticalAlignment="Top" Height="20" Width="71" Click="NovoCliente_Click"/>
 
 
-        <TextBlock HorizontalAlignment="Left" Margin="25,177,0,0" Text="Conta:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt3" HorizontalAlignment="Left" Margin="25,237,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txt4" HorizontalAlignment="Left" Margin="174,236,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="25,206,0,0" Text="Número:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="179,207,0,0" Text="Agência:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:Name="Inserir" Content="Inserir" HorizontalAlignment="Left" Margin="26,277,0,0" VerticalAlignment="Top" Height="20" Width="71" Click="Inserir_Click"/>
-        <Button x:Name="Listar" Content="Listar" HorizontalAlignment="Left" Margin="175,277,0,0" VerticalAlignment="Top" Height="20" Width="71" Click="Listar_Click"/>
-        <ListBox x:Name="exibirlista" HorizontalAlignment="Left" Height="85" Margin="25,322,0,0" VerticalAlignment="Top" Width="269"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,166,0,0" Text="Conta:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt3" HorizontalAlignment="Left" Margin="25,226,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt4" HorizontalAlignment="Left" Margin="174,225,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="25,195,0,0" Text="Número:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="179,196,0,0" Text="Agência:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="Inserir" Content="Inserir" HorizontalAlignment="Left" Margin="26,266,0,0" VerticalAlignment="Top" Height="20" Width="71" Click="Inserir_Click"/>
+        <Button x:Name="Listar" Content="Listar" HorizontalAlignment="Left" Margin="175,266,0,0" VerticalAlignment="Top" Height="20" Width="71" Click="Listar_Click"/>
+        <ListBox x:Name="exibirlista" HorizontalAlignment="Left" Height="85" Margin="25,303,0,0" VerticalAlignment="Top" Width="269"/>
 
-        <TextBlock HorizontalAlignment="Left" Margin="26,421,0,0" Text="Saldo Total:" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <ListBox x:Name="exibirtotal" Margin="26,451,122,42"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,404,0,0" Text="Saldo Total:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ListBox x:Name="exibirtotal" Margin="26,459,122,34"/>
+        <Button Content="Mostrar Saldo" HorizontalAlignment="Left" Margin="26,429,0,0" VerticalAlignment="Top" Click="Button_Click"/>
     </Grid>
 </Window>

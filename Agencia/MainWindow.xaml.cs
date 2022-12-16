@@ -32,16 +32,31 @@ namespace Agencia
             Cliente c = new Cliente();
             c.SetNome(txt1.Text);
             c.SetCpf(txt2.Text);
+            cs[k] = c;
+            k++;
         }
 
         private void Inserir_Click(object sender, RoutedEventArgs e)
         {
-
+            Conta x = new Conta();
+            x.SetNumero(txt3.Text);
+            x.SetAgencia(txt4.Text);
+            x.SetSaldo(Double.Parse(txt3.Text));
         }
 
         private void Listar_Click(object sender, RoutedEventArgs e)
         {
+            Cliente x = new Cliente();
+            exibirlista.ItemsSource = null;
+            exibirlista.ItemsSource = x.Listar();
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Cliente s = new Cliente();
+            exibirtotal.ItemsSource = null;
+            exibirtotal.ItemsSource = s.SaldoTotal;
         }
     }
 }

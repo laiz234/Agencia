@@ -26,11 +26,11 @@ namespace Agencia
         }
         private Conta[] contas = new Conta[1000];
         private int k = 0;
-        public void Inserir(Conta c)
-        {
-            contas[k] = c;
-            k++;
-        }
+        ///public void Inserir(Conta c)
+        ///{
+            ///contas[k] = c;
+            ///k++;
+        ///}
         public Conta[] Listar()
         {
             Conta[] vetor = new Conta[k];

@@ -10,8 +10,6 @@ namespace Agencia
         private string agencia;
         private double saldo;
 
-        public object Saldo { get; internal set; }
-
         public void SetNumero(string n)
         {
             numero = n;
