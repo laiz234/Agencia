@@ -8,6 +8,22 @@ namespace Agencia
     {
         private string nome;
         private string cpf;
+        public void SetNome(string n)
+        {
+            nome = n;
+        }
+        public string GetNome()
+        {
+            return nome;
+        }
+        public void SetCpf(string c)
+        {
+            cpf = c;
+        }
+        public string GetCpf()
+        {
+            return cpf;
+        }
         private Conta[] contas = new Conta[1000];
         private int k = 0;
         public void Inserir(Conta c)
@@ -29,9 +45,5 @@ namespace Agencia
                 saldocontas += Saldo;
             return saldocontas;
         }
-
-
-
-
     }
 }

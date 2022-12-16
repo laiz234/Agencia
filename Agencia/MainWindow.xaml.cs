@@ -24,5 +24,24 @@ namespace Agencia
         {
             InitializeComponent();
         }
+        private Cliente[] cs = new Cliente[100];
+        private int k;
+
+        private void NovoCliente_Click(object sender, RoutedEventArgs e)
+        {
+            Cliente c = new Cliente();
+            c.SetNome(txt1.Text);
+            c.SetCpf(txt2.Text);
+        }
+
+        private void Inserir_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Listar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
