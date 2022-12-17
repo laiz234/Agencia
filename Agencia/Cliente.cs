@@ -45,13 +45,9 @@ namespace Agencia
                 saldocontas += Saldo;
             return saldocontas;
         }
-        //public override string ToString()
-        //{
-        //    {
-        //        if (SaldoTotal == 0)
-        //            return $"{SaldoTotal} Sem saldo";
-        //    }
-        //    return$"{SaldoTotal}"
-        //}
+        public override string ToString()
+        {
+            return $"{cpf} - {nome}";
+        }
     }
 }

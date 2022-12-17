@@ -41,10 +41,5 @@ namespace Agencia
                 return $"{numero} - {agencia} - {saldo} sem saldo! ";
             return $"{numero} - {agencia} - {saldo} ";
         }
-
-        internal IEnumerable Listar()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

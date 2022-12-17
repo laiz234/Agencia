@@ -27,8 +27,8 @@
 
         <TextBlock HorizontalAlignment="Left" Margin="26,404,0,0" Text="Saldo Total:" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <ListBox x:Name="exibirtotal" Margin="26,459,122,34"/>
-        <Button Content="Mostrar Saldo" HorizontalAlignment="Left" Margin="26,429,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Mostrar Saldo" HorizontalAlignment="Left" Margin="26,429,0,0" VerticalAlignment="Top" Click="Saldo"/>
         <TextBlock HorizontalAlignment="Left" Margin="220,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44"><Run Text="Saldo"/><Run Language="pt-br" Text=":"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Margin="220,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74"/>
+        <TextBox x:Name="saldo" HorizontalAlignment="Left" Margin="220,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74"/>
     </Grid>
 </Window>

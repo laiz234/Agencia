@@ -42,29 +42,21 @@ namespace Agencia
             Conta x = new Conta();
             x.SetNumero(txt3.Text);
             x.SetAgencia(txt4.Text);
-            x.SetSaldo(Double.Parse(txt3.Text));
+            x.SetSaldo(Double.Parse(saldo.Text));
         }
 
         private void Listar_Click(object sender, RoutedEventArgs e)
         {
-            //Cliente x = new Cliente();
-            Conta x = new Conta();
+            Cliente x = new Cliente();
             exibirlista.ItemsSource = null;
             exibirlista.ItemsSource = x.Listar();
         }
 
-        //private void Button_Click(object sender, RoutedEventArgs e)
-        //{
-         //   Cliente s = new Cliente();
-         //   exibirtotal.ItemsSource = null;
-         //   exibirtotal.ItemsSource = s.SaldoTotal();
-       // }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Saldo_Click(object sender, RoutedEventArgs e)
         {
-            Conta s = new Conta();
+            Cliente s = new Cliente();
             exibirtotal.ItemsSource = null;
-            exibirtotal.ItemsSource = s.GetSaldo();
-
+            exibirtotal.ItemsSource = s.SaldoTotal();
         }
     }
 }
